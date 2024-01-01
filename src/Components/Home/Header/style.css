@@ -1,0 +1,233 @@
+.home-header {
+    background: linear-gradient(90.59deg, #274550 0.32%, #3D7589 99.3%);
+    color: #FFF;
+    height: 800px;
+    position: relative;
+}
+
+.o-header {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 87%;
+    align-items: center;
+}
+
+.home-header .triangle .arrow-right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 750px solid transparent;
+    border-right: 1200px solid #F1D150;
+    z-index: 0;
+    animation: loader 1.9s;
+}
+
+@keyframes loader {
+    0% {
+        top: -1200px;
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+
+.home-header .o-header .left-header,
+.home-header .o-header .right-header {
+    z-index: 5;
+}
+
+.home-header .o-header .left-header {
+    width: 50vw;
+}
+
+.home-header .o-header .right-header {
+    width: 35vw;
+}
+
+.home-header .o-header .right-header .prodjj img {
+    width: 100%;
+}
+
+
+
+.home-header .o-header .right-header .right-slogan {
+    text-align: right;
+    margin-top: 25px;
+    color: #274550;
+    width: 100%;
+    font-weight: 400;
+    font-size: 18px;
+    animation: slogan-right 5s;
+}
+
+@keyframes slogan-right {
+    0% {
+        opacity: 0;
+    }
+
+}
+
+.home-header .o-header .left-header .left-slogan {
+    text-align: left;
+    color: #F1D150;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.home-header .o-header .left-header {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 80%;
+}
+
+.home-header .o-header .left-header .header-title {
+    font-weight: 600;
+    font-size: 4vw;
+    line-height: 84px;
+    color: #FFFFFF;
+}
+
+.home-header .o-header .left-header .header-description p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 35px;
+    margin-top: 15px;
+    color: #FFFFFF;
+}
+
+.home-header .o-header .left-header .header-btn button {
+    background: #F1D150;
+    border: 1px solid #F1D150;
+    border-radius: 26px;
+    width: 250px;
+    height: 50px;
+    color: #274550;
+    font-weight: 400;
+    font-size: 1.2vw;
+    text-align: center;
+    cursor: pointer;
+    transition: .8s;
+}
+
+.home-header .o-header .left-header .header-btn button:hover {
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    transition: .8s;
+}
+
+.home-header .o-header {
+    position: relative;
+}
+
+.home-header .o-header img#lines-svg {
+    width: 90%;
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    animation: lines 2.5s;
+}
+
+@keyframes lines {
+    0% {
+        left: -1000px;
+    }
+
+    100% {
+        transform: translateX(-3px);
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+    .home-header {
+        height: 100%;
+    }
+
+    .home-header .triangle .arrow-right {
+        border-bottom: 500px solid transparent;
+        border-right: 320px solid #F1D150;
+    }
+
+    .home-header .o-header {
+        flex-direction: column-reverse;
+    }
+
+
+    .home-header .o-header .left-header,
+    .home-header .o-header .right-header {
+        width: 90vw;
+        margin-top: 20px;
+    }
+
+    .home-header .o-header .left-header .left-slogan {
+        width: 90vw;
+        display: none;
+        margin-bottom: 15px;
+    }
+
+    .home-header .o-header .left-header .header-title {
+        font-size: 12vw;
+    }
+
+    .home-header .o-header .left-header .header-description p {
+        width: 85vw;
+        margin-bottom: 25px;
+    }
+
+    .home-header .o-header .left-header .header-btn button {
+        font-size: 5vw;
+        width: 70%;
+        margin-bottom: 50px;
+        cursor: pointer;
+        padding: 10px;
+        transition: 0.8s;
+    }
+
+    .home-header .o-header .left-header .header-btn button:hover {
+        border: 2px solid #FFF;
+        color: #FFF;
+        background-color: transparent;
+        transition: 0.8s;
+    }
+
+    .home-header .o-header .right-header .right-slogan {
+        color: #F1D150;
+        text-align: start;
+        margin-bottom: 50px;
+        text-align: left;
+        width: 40vw;
+    }
+
+    .home-header .o-header .right-header {
+        flex-direction: column;
+        display: flex;
+    }
+
+    .home-header .o-header img#lines-svg {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        animation: lines 2.5s;
+        width: 100%;
+    }
+
+    .home-header .o-header .right-header img {
+        width: 80%;
+    }
+
+    .home-header .div-sc {
+        width: 80vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+}

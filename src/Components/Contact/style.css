@@ -1,0 +1,184 @@
+.contact-page {
+    background: linear-gradient(90.59deg, #274550 0.32%, #3D7589 99.3%);
+    position: relative;
+}
+
+.contact-page img#contact-lines {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+}
+
+.contact-page {
+    padding: 5vw 10vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact-page .contact-l {
+    width: 35vw;
+    margin: 0 40px;
+    position: relative;
+    z-index: 5;
+}
+
+.contact-page .contact-r {
+    width: 30vw;
+}
+
+.contact-page .contact-r {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-page .contact-l h1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 65px;
+    margin-bottom: 40px;
+    line-height: 84px;
+    color: #FFFFFF;
+}
+.contact-page .contact-l h4{
+    font-size: 55px;
+    margin-bottom: 15px;
+    font-weight:400;
+    color: #FFF;
+}
+
+.contact-page .contact-l h1 span,
+.contact-page .contact-l h4 span  {
+    color: #F1D150;
+}
+
+.contact-page .contact-l p {
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 38px;
+    /* or 161% */
+
+    color: #FFFFFF;
+
+}
+
+.contact-page .contact-r {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 34px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(117px);
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 10px;
+    padding: 30px;
+    height: 100%;
+    position: relative;
+    z-index: 5;
+}
+
+.contact-page .contact-r h1 {
+    font-weight: 600;
+    margin-top: 20px;
+    font-size: 35px;
+    margin-bottom: 30px;
+    line-height: 30px;
+    /* identical to box height */
+
+    /* Dark copy */
+    color: #284651;
+}
+
+.contact-page .contact-r input {
+    background-color: transparent;
+    border: 1px solid #274550;
+    color: #274550;
+    padding: 15px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 15px;
+    margin: 10px 0;
+    border-radius: 3px;
+}
+
+.contact-page .contact-r input::placeholder {
+    color: #BBBB;
+}
+
+.contact-page .contact-r input:focus {
+    border: 1px solid #F1D150;
+    background: rgba(40, 70, 81, 0.05);
+}
+
+.contact-page .contact-r label {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 18px;
+    /* identical to box height */
+    margin: 20px 0;
+    /* Dark copy */
+    color: #284651;
+}
+
+.contact-page .contact-r textarea {
+    min-height: 150px;
+    background-color: transparent;
+    border: 1px solid #274550;
+    color: #274550;
+    padding: 15px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 15px;
+    border-radius: 3px;
+}
+
+.contact-page .contact-r button {
+    padding: 15px 25px;
+    width: 100%;
+    color: #274550;
+    background: #F1D150;
+    /* Primary yellow */
+    border: 2px solid #F1D150;
+    border-radius: 35px;
+    font-size: 20px;
+    margin: 25px 0;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .8s;
+}
+
+.contact-page .contact-r button:hover {
+    padding: 15px 25px;
+    width: 100%;
+    color: #274550;
+    background: transparent;
+    /* Primary yellow */
+    border: 2px solid #274550;
+    transition: 0.8s;
+}
+
+@media screen and (max-width: 1000px) {
+    .contact-page{
+        flex-direction: column;
+        padding: 0;
+    }
+    .contact-page .contact-l, .contact-page .contact-r{
+        width: 90vw;
+    }
+    .contact-page .contact-l h1 {
+        font-size: 8vw;
+        margin-top: 25px;
+        margin-bottom: 20px;
+        line-height: 44px;
+    }
+    .contact-page .contact-l p{
+        margin-bottom: 30px;
+    }
+    .contact-page .contact-r h1{
+        font-size: 7vw;
+        margin-bottom: 10px;
+    }
+    .contact-page .contact-r{
+        margin-bottom: 50px;
+    }
+}

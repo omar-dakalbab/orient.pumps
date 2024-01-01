@@ -1,0 +1,68 @@
+.products-component {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.products-component h1 {
+    color: #284651;
+}
+
+.products-component .product-cards {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5%;
+    justify-content: center;
+    background: linear-gradient(90.59deg, #274550 0.32%, #3D7589 99.3%);
+    width: 100%;
+}
+
+.products-component .product-cards .pro-card {
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: #284651;
+    background-color: #FFF;
+    margin: 20px;
+    height: 100%;
+    padding: 10px 15px;
+    text-align: center;
+    border-radius: 10px;
+    width: 300px;
+}
+
+.products-component .product-cards .pro-card img {
+    object-fit: cover;
+    width: 280px;
+    border-radius: 10px;
+}
+
+.products-component .product-cards .pro-card h3 {
+    margin: 20px;
+}
+
+.products-component .product-cards .pro-card button {
+    width: 100%;
+    margin: 20px 0;
+    padding: 15px 25px;
+    font-size: 1.2vw;
+    cursor: pointer;
+    background: #F1D150;
+    border: 1px solid #F1D150;
+    border-radius: 26px;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .products-component .product-cards .pro-card button {
+        font-size: 3vw;
+    }
+
+    .products-component .product-cards .pro-card {
+        width: 70vw;
+    }
+}

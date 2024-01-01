@@ -1,0 +1,179 @@
+.projects {
+    position: relative;
+    color: #FFF;
+    width: 100%;
+    height: 100%;
+    padding: 60px 7vw;
+    background: linear-gradient(90.59deg, #274550 0.32%, #3D7589 99.3%);
+}
+
+.projects img#project-up {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+}
+
+.projects img#project-down {
+    position: absolute;
+    bottom: 5%;
+    right: 15%;
+    width: 20%;
+    opacity: 14%;
+    display: none;
+}
+
+.projects .projects-title h1 {
+    width: 14vw;
+    font-size: 2vw;
+    font-weight: 500;
+    margin-right: 20px;
+}
+
+.projects .projects-title {
+    display: flex;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.projects .projects-title hr {
+    width: 100%;
+    height: 1px;
+    border: 1px solid #F1D150;
+}
+
+.projects .project-posts {
+    display: flex;
+    justify-content: space-between;
+}
+
+.projects .project-post {
+    margin: 45px 0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 5;
+    width: 25vw;
+    transition: 0.8s !important;
+}
+
+.projects .project-posts .project-post:hover {
+    transition: 0.8s !important;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+.projects .project-post .project-info {
+    margin: 30px 0;
+    text-align: center;
+}
+
+
+.projects .project-post .project-info p {
+    font-weight: 400;
+    font-size: 1.3vw;
+    text-align: center;
+    line-height: 29px;
+    margin-bottom: 15px;
+}
+
+.projects .project-post .project-info h2 {
+    font-weight: 500;
+    font-size: 2vw;
+    text-align: center;
+    line-height: 45px;
+    margin-bottom: 25px;
+}
+
+.projects .project-post img {
+    height: 350px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.projects .project-post .project-info button {
+    width: 80%;
+    height: 50px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    text-transform: uppercase;
+    background: #F1D150;
+    border-radius: 26px;
+    color: #284651;
+    border: 0px;
+    transition: 0.8s;
+    cursor: pointer;
+}
+
+.projects .project-post .project-info button:hover {
+    background-color: transparent;
+    color: #FFF;
+    transition: 0.8s;
+    border: 2px solid #FFF;
+}
+
+@media screen and (max-width: 1000px) {
+    .projects {
+        padding: 30px;
+        height: 100%;
+    }
+
+    .projects .projects-title h1 {
+        width: 90vw;
+        font-size: 7vw;
+        margin-right: 5px;
+    }
+
+    .projects .projects-title {
+        display: flex;
+        align-items: center;
+        padding: 15px 0;
+    }
+
+    .projects .project-post {
+        width: 100%;
+        flex-direction: column;
+        z-index: 5;
+        position: relative;
+    }
+
+    .projects .project-posts {
+
+        flex-direction: column;
+    }
+
+
+    .projects .project-post img {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .projects .project-post .project-info {
+        width: 85vw;
+    }
+
+    .projects .project-post .project-info p {
+        font-size: 4vw;
+        line-height: 32px;
+        margin-bottom: 25px;
+    }
+
+    .projects .project-post .project-info h2 {
+        font-size: 8vw;
+        line-height: 60px;
+    }
+
+    .projects img#project-up {
+        position: absolute;
+        top: 1%;
+        right: 5%;
+        z-index: 3;
+        width: 30%;
+    }
+
+    .projects img#project-down {
+        position: absolute;
+        bottom: 10%;
+        right: 30%;
+        width: 40%;
+    }
+}

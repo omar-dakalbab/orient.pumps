@@ -1,0 +1,127 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px 5vw;
+    align-items: center;
+}
+
+.navbar .nav-links ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.navbar .nav-links ul li {
+    color: #284651;
+    animation: link 4s;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.nav-links ul li::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #284651;
+    transition: width .3s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+@keyframes link {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        color: #284651;
+    }
+}
+
+.navbar .nav-links {
+    z-index: 2;
+    width: 50%;
+}
+
+.navbar .nav-links-burger {
+    display: none;
+    transition: 0.4s;
+}
+
+.burger-btn {
+    display: none;
+}
+
+.navbar .logo {
+    z-index: 2;
+    width: 40%;
+    text-align: left !important;
+}
+.navbar .logo img#mobile{
+    display: none;
+    pointer-events: all !important;
+}
+.navbar .logo img#desktop{
+    z-index: 2;
+    width: 200px;
+    margin-top: 5px;
+    pointer-events: all !important;
+}
+
+@media screen and (max-width: 1000px) {
+    .navbar .nav-links-burger {
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        z-index: 10;
+        right: 0;
+        top: 0;
+        width: 100%;
+        padding: 50px 20px;
+        height: 100vh;
+        transition: 0.4s;
+        background: linear-gradient(90.59deg, #274550 0.32%, #3D7589 99.3%);
+    }
+    .navbar .logo img#desktop{
+        display: none;
+    }
+    .navbar .logo img#mobile{
+        display: block;
+        width: 50%;
+    }
+    .burger-btn {
+        display: block;
+        text-align: end;
+        width: 100%;
+    }
+
+    .navbar .nav-links-burger ul li {
+        color: #FFF;
+        margin: 30px;
+        font-size: 4.5vw;
+        font-weight: 500;
+    }
+
+    .navbar .nav-links {
+        display: none;
+    }
+
+    .burger-btn {
+        z-index: 9;
+    }
+
+    .navbar {
+        padding: 30px 40px;
+        justify-content: space-between;
+    }
+
+    .navbar .nav-links-burger ul li img {
+        margin-top: 200px;
+        width: 70%;
+    }
+}

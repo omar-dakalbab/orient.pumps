@@ -1,0 +1,150 @@
+.post-view {
+    background: linear-gradient(90.59deg, #274550 0.32%, #3D7589 99.3%);
+    min-height: 100vh;
+}
+
+.post {
+    position: relative;
+}
+
+.post .triangle .arrow-right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 750px solid transparent;
+    border-right: 1200px solid #F1D150;
+    z-index: 0;
+    animation: loader 1.9s;
+}
+
+.post .post-details .post-img,
+.post .post-details .post-img img {
+    width: 100%;
+}
+.post .post-details .post-img img{
+    height: 600px;
+    object-fit: cover;
+}
+
+.post .post-details {
+    z-index: 3;
+    position: relative;
+}
+
+.post .post-details {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 10%;
+}
+
+.post .post-details h1 {
+    text-align: left;
+    width: 100%;
+    margin-bottom: 40px;
+    color: #FFF;
+    font-weight: 400;
+    font-size: 3vw;
+}
+
+.post .post-body {
+    margin-bottom: 50px;
+    white-space: pre-line;
+}
+
+.post .post-body p {
+    line-height: 35px;
+    margin: 35px 0;
+    font-size: 1.3vw;
+    color: #FFFFFF;
+}
+
+
+/* POST SUGGESTIONS */
+.popular-posts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    width: 100%;
+    margin-top: 30px;
+    padding: 50px 10%;
+}
+
+.popular-posts h1 {
+    font-size: 3vw;
+    text-align: left;
+    width: 100%;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.suggested-posts {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.suggested-posts .post-card {
+    width: 20vw;
+    color: #FFF;
+}
+
+.suggested-posts .post-card img {
+    width: 100%;
+}
+
+.suggested-posts .post-card h2 {
+    margin: 20px 0;
+}
+
+@media screen and (max-width: 1000px) {
+    .post .triangle .arrow-right {
+        border-bottom: 500px solid transparent;
+        border-right: 320px solid #F1D150;
+    }
+
+    .post .post-details h1 {
+        text-align: left;
+        width: 100%;
+        margin-bottom: 40px;
+        color: #FFF;
+        font-weight: 400;
+        font-size: 7vw;
+    }
+
+    .post .post-body p {
+        line-height: 35px;
+        margin: 35px 0;
+        font-size: 4vw;
+        color: #FFFFFF;
+    }
+
+    .suggested-posts {
+        display: flex;
+        flex-direction: column;
+        padding: 50px 1%;
+    }
+
+    .popular-posts h1 {
+        font-size: 8vw;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .suggested-posts .post-card {
+        width: 400px;
+        color: #FFF;
+        margin-bottom: 40px;
+    }
+
+    .suggested-posts .post-card p {
+        line-height: 30px;
+    }
+}

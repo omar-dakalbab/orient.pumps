@@ -1,0 +1,186 @@
+.consult-page {
+    background: linear-gradient(90.59deg, #274550 0.32%, #3D7589 99.3%);
+    position: relative;
+    padding: 5vw 10vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.consult-page img#contact-lines {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.consult-page h3{
+    margin: 15px 0;
+    color: #274550;
+}
+.consult-page .contact-l {
+    width: 35vw;
+    margin: 0 40px;
+    position: relative;
+    z-index: 5;
+}
+
+.consult-page .contact-r {
+    display: flex;
+    width: 30vw;
+    flex-direction: column;
+}
+
+.consult-page .contact-l h1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 65px;
+    line-height: 84px;
+    color: #FFFFFF;
+}
+
+.consult-page .contact-l h4 {
+    font-size: 50px;
+    margin-bottom: 25px;
+    font-weight: 400;
+    color: #FFF;
+}
+
+.consult-page .contact-l h1 span,
+.consult-page .contact-l h4 span {
+    color: #F1D150;
+}
+
+.consult-page .contact-l p {
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 38px;
+    /* or 161% */
+
+    color: #FFFFFF;
+
+}
+
+.consult-page .contact-r {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 34px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(117px);
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 10px;
+    padding: 30px;
+    height: 100%;
+    position: relative;
+    z-index: 5;
+}
+
+.consult-page .contact-r h1 {
+    font-weight: 600;
+    margin-top: 20px;
+    font-size: 35px;
+    margin-bottom: 30px;
+    line-height: 30px;
+    /* identical to box height */
+
+    /* Dark copy */
+    color: #284651;
+}
+
+.consult-page .contact-r input {
+    background-color: transparent;
+    border: 1px solid #274550;
+    color: #274550;
+    padding: 15px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 15px;
+    margin: 10px 0;
+    border-radius: 3px;
+}
+
+.consult-page .contact-r input::placeholder {
+    color: #BBBB;
+}
+
+.consult-page .contact-r input:focus {
+    border: 1px solid #F1D150;
+    background: rgba(40, 70, 81, 0.05);
+}
+
+.consult-page .contact-r label {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 18px;
+    /* identical to box height */
+    margin: 20px 0;
+    /* Dark copy */
+    color: #284651;
+}
+
+.consult-page .contact-r textarea {
+    min-height: 150px;
+    background-color: transparent;
+    border: 1px solid #274550;
+    color: #274550;
+    padding: 15px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 15px;
+    border-radius: 3px;
+}
+
+.consult-page .contact-r button {
+    padding: 15px 25px;
+    width: 100%;
+    color: #274550;
+    background: #F1D150;
+    /* Primary yellow */
+    border: 2px solid #F1D150;
+    border-radius: 35px;
+    font-size: 20px;
+    margin: 25px 0;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .8s;
+}
+
+.consult-page .contact-r button:hover {
+    padding: 15px 25px;
+    width: 100%;
+    color: #274550;
+    background: transparent;
+    /* Primary yellow */
+    border: 2px solid #274550;
+    transition: 0.8s;
+}
+
+@media screen and (max-width: 1000px) {
+    .consult-page {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .consult-page .contact-l,
+    .consult-page .contact-r {
+        width: 90vw;
+    }
+
+    .consult-page .contact-l h1 {
+        font-size: 8vw;
+        margin-top: 25px;
+        margin-bottom: 20px;
+        line-height: 44px;
+    }
+
+    .consult-page .contact-l p {
+        margin-bottom: 30px;
+    }
+
+    .consult-page .contact-r h1 {
+        font-size: 7vw;
+        margin-bottom: 10px;
+    }
+
+    .consult-page .contact-r {
+        margin-bottom: 50px;
+    }
+}

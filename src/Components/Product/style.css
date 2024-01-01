@@ -1,0 +1,207 @@
+.product-comp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-comp .product-view {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 75px;
+    width: 100%;
+}
+
+.product-comp .product-view .product-images .sm-imgs {
+    display: flex;
+    margin-right: 20px;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+}
+
+.product-comp .product-view .product-images .sm-imgs img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+}
+
+.product-comp .product-view .product-images {
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    width: 35vw;
+}
+
+.product-comp .product-view .product-images .bg-img img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+.product-comp .product-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40vw;
+}
+
+.product-comp .product-info h1 {
+    font-weight: 600;
+    font-size: 46px;
+    line-height: 56px;
+    color: #284651;
+    margin-bottom: 20px;
+}
+
+.product-comp .product-info p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 36px;
+    color: #284651;
+}
+
+.product-comp .product-info span#price {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 29px;
+    color: #284651;
+    margin-top: 30px;
+}
+
+.product-comp .product-info button {
+    background: #F1D150;
+    border: 1px solid #F1D150;
+    border-radius: 30px;
+    color: #284651;
+    margin-top: 30px;
+    padding: 18px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: .8s;
+    width: 100%;
+}
+
+.product-comp .product-info button:hover {
+    background-color: transparent;
+    border: 1px solid #284651;
+    color: #284651;
+    transition: .8s;
+}
+
+.product-comp .product-info #download-button {
+    background: transparent;
+    border: 1px solid #284651;
+    border-radius: 30px;
+    color: #284651;
+    margin-top: 20px;
+    padding: 10px;
+    width: 70%;
+    font-size: 20px;
+    cursor: pointer;
+    transition: .8s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.product-info-btns{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-comp .product-info #download-button:hover {
+    background-color: #F1D150;
+    border: 1px solid #F1D150;
+    color: #284651;
+    transition: .8s;
+}
+
+.product-comp .partners {
+    display: flex;
+    width: 60vw;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+    margin-bottom: 50px;
+}
+
+.product-comp .partners .partner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.product-comp .partners .partner img {
+    margin-bottom: 20px;
+    transition: 0.8s;
+    width: 50px;
+}
+
+.product-comp .partners .partner img:hover {
+    transform: translateY(-10px);
+    transition: 0.8s;
+}
+.product-comp .product-info .sabit-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.product-comp .product-info .sabit-img img{
+    max-width: 400px;
+    height: auto;
+    object-fit: cover;
+    margin-top: 50px;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .product-comp,
+    .product-view {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .product-comp .product-view .product-images {
+        flex-direction: column-reverse;
+        width: 90vw;
+    }
+
+    .product-comp .product-view .product-images .bg-img img {
+        width: 100%;
+    }
+
+    .product-comp .product-view .product-images .sm-imgs {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 60vw;
+        margin-top: 10px;
+    }
+
+    .product-comp .product-info {
+        width: 90vw;
+        margin-top: 50px;
+    }
+
+    .product-comp .partners {
+        width: 90vw;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 5px 25px;
+    }
+
+    .product-comp .partners .partner {
+        margin: 15px;
+    }
+
+
+
+}

@@ -1,0 +1,299 @@
+.products {
+    color: #284651;
+    width: 100%;
+    height: 100%;
+    padding: 60px 0px;
+    background: #FFF;
+    position: relative;
+}
+
+.products .products-title h1 {
+    width: 14vw;
+    font-size: 2vw;
+    font-weight: 500;
+    margin-right: 20px;
+}
+
+.products .products-title {
+    display: flex;
+    align-items: center;
+    padding: 40px 120px;
+}
+
+.products .products-title hr {
+    width: 100%;
+    height: 1px;
+    border: 1px solid #F1D150;
+}
+
+.products .products-desc {
+    text-align: center;
+    width: 100%;
+    padding: 0px 9%;
+}
+
+.products .products-desc p {
+    line-height: 29px;
+    font-size: 1.2vw;
+}
+
+.products .product-group {
+    /* height: 500px;
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; */
+    margin-bottom: 50px;
+}
+
+.products .product-group #product-icon {
+    font-size: 2.5vw;
+    z-index: 5;
+    color: #284651;
+    cursor: pointer;
+}
+
+.products .product-group .product {
+    display: grid;
+    z-index: 5;
+    transition: 0.4s;
+    cursor: pointer;
+    place-items: center;
+    width: 20vw;
+}
+
+.products .product-group .active {
+    width: 20vw;
+}
+
+.products .product-group .product p {
+    margin: 35px;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 25px;
+    color: #284651;
+}
+
+.products .explore-btn button {
+    background: #F1D150;
+    border: 3px solid #F1D150;
+    border-radius: 35px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 25px 35px;
+    z-index: 5;
+    color: #284651;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.products .explore-btn button:hover {
+    background: #284651;
+    border: 3px solid #284651;
+    color: #FFF;
+    transition: 0.5s;
+}
+
+.products .explore-btn {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.products .div-yellow {
+    position: absolute;
+    bottom: 11%;
+    left: 0;
+    width: 100%;
+    height: 330px;
+    z-index: 0;
+    background: rgba(241, 209, 80, 0.4);
+    transition: 0.4s;
+}
+
+.products .product-group .product img {
+    width: 100%;
+}
+
+.products .product-group .product:hover {
+    transition: 1.2s;
+    transform: translateY(-40px);
+}
+
+.products .circles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.products .circles .circle {
+    z-index: 5;
+    background-color: #284651;
+    border: 1px solid #284651;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    margin: 5px;
+}
+
+.products .circles .active {
+    z-index: 5;
+    background-color: transparent;
+    border: 1px solid #284651;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    margin: 5px;
+}
+
+@media screen and (max-width: 1000px) {
+    .products {
+        padding: 0;
+        margin-bottom: 60px;
+    }
+
+    .products .products-title h1 {
+        width: 75vw;
+        font-size: 6vw;
+        font-weight: 500;
+        margin: 30px 0;
+    }
+
+    .products .products-title {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        margin-top: 20px;
+    }
+
+    .products .products-title hr {
+        width: 100%;
+        height: 1px;
+        border: 1px solid #F1D150;
+    }
+
+    .products .products-desc {
+        text-align: center;
+        width: 100%;
+        padding: 0px;
+    }
+
+    .products .products-desc p {
+        line-height: 35px;
+        font-size: 3.5vw;
+        margin: 20px;
+        text-align: left;
+    }
+
+
+
+    .products .product-group #product-icon {
+        display: none;
+    }
+
+    .products .product-group .product {
+        display: grid;
+        z-index: 5;
+        transition: 0.4s;
+        cursor: pointer;
+        place-items: center;
+        width: 75vw;
+    }
+
+    .products .product-group .active {
+        width: 0px;
+        margin: 0px;
+    }
+
+    .products .product-group .product p {
+        margin: 35px;
+        margin-bottom: 0;
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 25px;
+        color: #284651;
+    }
+
+    .products .explore-btn button {
+        background: #F1D150;
+        border: 3px solid #F1D150;
+        border-radius: 35px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 16px;
+        text-transform: uppercase;
+        cursor: pointer;
+        padding: 25px 35px;
+        z-index: 5;
+        color: #284651;
+        transition: 0.5s;
+    }
+
+    .products .explore-btn button:hover {
+        background: #284651;
+        border: 3px solid #284651;
+        color: #FFF;
+        transition: 0.5s;
+    }
+
+    .products .explore-btn {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .products .div-yellow {
+        position: absolute;
+        bottom: 4%;
+        left: 0;
+        width: 100%;
+        height: 380px;
+        z-index: 0;
+        background: rgba(241, 209, 80, 0.4);
+        transition: 0.4s;
+    }
+
+    .products .product-group .product img {
+        width: 100%;
+    }
+
+    .products .product-group .product:hover {
+        transition: 1.2s;
+        transform: translateY(-40px);
+    }
+
+    .products .circles {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .products .circles .circle {
+        z-index: 5;
+        background-color: #284651;
+        border: 1px solid #284651;
+        width: 8px;
+        height: 8px;
+        border-radius: 100%;
+        margin: 5px;
+    }
+
+    .products .circles .active {
+        z-index: 5;
+        background-color: transparent;
+        border: 1px solid #284651;
+        width: 8px;
+        height: 8px;
+        border-radius: 100%;
+        margin: 5px;
+    }
+    .products .product-group .product:hover {
+        transition: 1.2s;
+        transform: translateY(-0px);
+    }
+}

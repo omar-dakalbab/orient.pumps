@@ -1,0 +1,37 @@
+.posts-c {
+    position: relative;
+    background: linear-gradient(90.59deg, #274550 0.32%, #3D7589 99.3%);
+    color: #FFF;
+    min-height: 100vh;
+}
+
+.posts-c .triangle .arrow-right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 750px solid transparent;
+    border-right: 1200px solid #F1D150;
+    z-index: 0;
+    animation: loader 1.9s;
+}
+
+@keyframes loader {
+    0% {
+        top: -1200px;
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+
+.posts-c .posts-c-details {
+    z-index: 5;
+    position: relative;
+}
+.posts-c .posts-c-details .blogs .blogs-title{
+    margin: 40px;
+}

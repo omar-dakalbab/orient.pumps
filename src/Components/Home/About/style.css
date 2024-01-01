@@ -1,0 +1,66 @@
+.about {
+    background: url('/img/about-us-Rec.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #FFF;
+    width: 100%;
+    padding: 120px;
+}
+
+.about .about-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 40%;
+}
+
+.about .about-title h1 {
+    font-size: 2.8vw;
+    font-weight: 500;
+    margin-right: 20px;
+    width: 500px;
+}
+
+.about .about-title hr {
+    width: 100%;
+    height: 1px;
+    border: 1px solid #F1D150;
+}
+
+.about .about-p p {
+    margin: 20px 0px;
+    font-weight: 400;
+    font-size: 1.6vw;
+    line-height: 35px;
+    width: 45%;
+}
+
+@media screen and (max-width: 1000px) {
+    .about {
+        width: 100%;
+        height: 1000px;
+        padding: 50px 20px;
+        background: url('/img/mob2.png') center;
+    }
+
+    .about .about-title {
+        width: 90%;
+    }
+
+    .about .about-title h1 {
+        font-size: 5vw;
+        width: 200px;
+    }
+
+    .about .about-p p {
+        width: 90vw;
+        font-size: 3.7vw;
+    }
+
+    .about .about-title hr {
+        width: 100%;
+        height: 1px;
+        border: 1px solid #F1D150;
+    }
+}

@@ -1,0 +1,112 @@
+.consult .consult-wrapper {
+    background-color: #0f2f3ce9;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 20px;
+    width: 60vw;
+    color: #fff;
+    height: 50vh;
+    z-index: 4;
+    position: relative;
+
+}
+
+.consult {
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.consult .consult-wrapper h3 {
+    font-weight: 400;
+    font-size: 2.5vw;
+    margin: 0 40px;
+    line-height: 55px;
+    text-align: center;
+}
+
+.consult .consult-wrapper p {
+    width: 40vw;
+    text-align: center;
+    margin: 30px 0;
+    font-size: 1.2vw;
+    line-height: 30px;
+}
+
+.consult .consult-wrapper button {
+    /* Primary yellow */
+    background: #F1D150;
+    /* Primary yellow */
+    border: 1px solid #F1D150;
+    border-radius: 35px;
+    color: #284651;
+    padding: 15px 120px;
+    font-size: 1vw;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.consult .consult-wrapper button:hover {
+    /* Primary yellow */
+    background: transparent;
+    /* Primary yellow */
+    border: 1px solid #fff;
+    border-radius: 35px;
+    color: #FFF;
+    transition: 0.5s;
+}
+
+.consult img#left-con,
+.consult img#right-con {
+    position: absolute;
+    margin: 25px;
+    z-index: 5;
+}
+
+.consult img#left-con {
+    left: 0;
+    bottom: 0;
+}
+
+.consult img#right-con {
+    right: 0;
+    bottom: 0;
+}
+
+.consult .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    border: 2px solid #284651;
+    background-color: #284651;
+}
+
+@media screen and (max-width: 1000px) {
+    .consult .consult-wrapper {
+        width: 80vw;
+        height: 60vh;
+    }
+
+    .consult .consult-wrapper h3 {
+        font-weight: 400;
+        font-size: 4.5vw;
+    }
+
+    .consult .consult-wrapper p {
+        width: 70vw;
+        margin: 15px 0;
+        font-size: 3vw;
+        line-height: 36px;
+    }
+
+    .consult .consult-wrapper button {
+        padding: 15px 90px;
+        font-size: 3vw;
+    }
+}
